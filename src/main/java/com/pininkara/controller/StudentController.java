@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 @Controller
-@RequestMapping("/stu")
+@RequestMapping("/adm")
 public class StudentController {
     //controller调service层
     @Autowired
@@ -42,7 +42,7 @@ public class StudentController {
     public String addStu(Student student){
         System.out.println("AddStu=>"+student);
         studentService.addStudent(student);
-        return "redirect:/stu/allStu";//重定向到@RequestMapping("/allStu")请求
+        return "redirect:/adm/allStu";//重定向到@RequestMapping("/allStu")请求
     }
 
     //跳转到修改页面
@@ -59,14 +59,14 @@ public class StudentController {
     public String updateStu(Student student){
         System.out.println("updateStu=>"+student);
         studentService.updateStudent(student);
-        return "redirect:/stu/allStu";
+        return "redirect:/adm/allStu";
     }
 
     //删除学生
     @RequestMapping("/deleteStu/{id}")
     public String deleteStu(@PathVariable("id") int id){
         studentService.deleteStudentById(id);
-        return "redirect:/stu/allStu";
+        return "redirect:/adm/allStu";
 
     }
 

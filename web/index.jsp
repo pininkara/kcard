@@ -27,7 +27,7 @@
 </head>
 <body>
 <h3>
-    <a href="${pageContext.request.contextPath}/stu/allStu">查看所有学生</a>
+    <a href="${pageContext.request.contextPath}/adm/allStu">查看所有学生</a>
 </h3>
 </body>
 </html>

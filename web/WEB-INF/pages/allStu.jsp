@@ -26,7 +26,7 @@
         <div>
             <div class="col-md-4 column">
                 <%--toAddStudent--%>
-                <a class="btn btn-primary" href="${pageContext.request.contextPath}/stu/toAddStu">添加学生</a>
+                <a class="btn btn-primary" href="${pageContext.request.contextPath}/adm/toAddStu">添加学生</a>
             </div>
         </div>
 
@@ -59,9 +59,9 @@
                         <td>${student.charge}</td>
                         <td>${student.bankid}</td>
                         <td>
-                            <a href="${pageContext.request.contextPath}/stu/toUpdateStu?id=${student.id}">修改</a>
+                            <a href="${pageContext.request.contextPath}/adm/toUpdateStu?id=${student.id}">修改</a>
                             &nbsp; | &nbsp;
-                            <a href="${pageContext.request.contextPath}/stu/deleteStu/${student.id}">删除</a>
+                            <a href="${pageContext.request.contextPath}/adm/deleteStu/${student.id}" >删除</a>
                         </td>
                     </tr>
                 </c:forEach>

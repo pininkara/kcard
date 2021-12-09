@@ -24,7 +24,7 @@
 
     </div>
 
-    <form action="${pageContext.request.contextPath}/stu/addStu" method="post">
+    <form action="${pageContext.request.contextPath}/adm/addStu" method="post">
         <div class="form-group">
             <label>学生姓名</label>
             <input type="text" name="name" class="form-control" required>
