@@ -27,6 +27,16 @@
             <div class="col-md-4 column">
                 <%--toAddStudent--%>
                 <a class="btn btn-primary" href="${pageContext.request.contextPath}/adm/toAddStu">添加学生</a>
+                <a class="btn btn-primary" href="${pageContext.request.contextPath}/adm/allStu">查看全部学生</a>
+            </div>
+            <div class="col-md-4 column"></div>
+            <div class="col-md-4 column">
+                <%--查询学生--%>
+                <form class="form-inline" action="${pageContext.request.contextPath}/adm/queryStu" method="post" style="float: right">
+                        <span style="color: red;font-weight: bold">${error}</span>
+                        <input type="text" name="queryName" class="form-control" placeholder="请输入要查询的学生姓名">
+                        <input type="submit" value="查询" class="btn btn-primary">
+                </form>
             </div>
         </div>
 
@@ -59,9 +69,9 @@
                         <td>${student.charge}</td>
                         <td>${student.bankid}</td>
                         <td>
-                            <a href="${pageContext.request.contextPath}/adm/toUpdateStu?id=${student.id}">修改</a>
-                            &nbsp; | &nbsp;
-                            <a href="${pageContext.request.contextPath}/adm/deleteStu/${student.id}" >删除</a>
+                            <a href="${pageContext.request.contextPath}/adm/toUpdateStu?id=${student.id}" class="btn btn-info">修改</a>
+                            &nbsp;&nbsp;
+                            <a href="${pageContext.request.contextPath}/adm/deleteStu/${student.id}" class="btn btn-danger" >删除</a>
                         </td>
                     </tr>
                 </c:forEach>

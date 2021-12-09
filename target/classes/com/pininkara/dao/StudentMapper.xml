@@ -35,4 +35,9 @@
         select *
         from student
     </select>
+
+    <select id="queryStudentByName" resultType="Student">
+        select * from student where name = #{queryName}
+    </select>
+
 </mapper>

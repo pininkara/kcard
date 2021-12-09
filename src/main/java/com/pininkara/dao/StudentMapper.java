@@ -21,4 +21,7 @@ public interface StudentMapper {
 
     //查全部
     List<Student> queryAllStudent();
+
+    //通过姓名查
+    Student queryStudentByName(@Param("queryName") String queryName);
 }

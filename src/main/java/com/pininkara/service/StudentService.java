@@ -21,4 +21,7 @@ public interface StudentService {
 
     //查全部
     List<Student> queryAllStudent();
+
+    //通过姓名查
+    Student queryStudentByName(String queryName);
 }
