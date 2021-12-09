@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
@@ -59,6 +60,14 @@ public class StudentController {
         System.out.println("updateStu=>"+student);
         studentService.updateStudent(student);
         return "redirect:/stu/allStu";
+    }
+
+    //删除学生
+    @RequestMapping("/deleteStu/{id}")
+    public String deleteStu(@PathVariable("id") int id){
+        studentService.deleteStudentById(id);
+        return "redirect:/stu/allStu";
+
     }
 
 }

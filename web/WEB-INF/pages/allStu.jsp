@@ -61,7 +61,7 @@
                         <td>
                             <a href="${pageContext.request.contextPath}/stu/toUpdateStu?id=${student.id}">修改</a>
                             &nbsp; | &nbsp;
-                            <a href="#">删除</a>
+                            <a href="${pageContext.request.contextPath}/stu/deleteStu/${student.id}">删除</a>
                         </td>
                     </tr>
                 </c:forEach>
