@@ -12,7 +12,7 @@
     <!--1.注解驱动-->
     <mvc:annotation-driven/>
     <!--2.静态资源过滤-->
-    <mvc:default-servlet-handler/>
+    <mvc:default-servlet-handler default-servlet-name="default"/>
     <!--3.扫描包：control-->
     <context:component-scan base-package="com.pininkara.controller"/>
     <!--4.视图解析器-->
@@ -20,5 +20,19 @@
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
+    <!--5.拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.pininkara.config.MyInterceptor"/>
+        </mvc:interceptor>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.pininkara.config.LoginInterceptor"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+
 
 </beans>

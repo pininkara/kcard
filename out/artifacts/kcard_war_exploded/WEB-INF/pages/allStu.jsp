@@ -19,6 +19,7 @@
             <div class="page-header">
                 <h1>
                     <small>所有学生信息</small>
+                    <small>${pageContext.request.session.getAttribute("id")}</small>
                 </h1>
             </div>
         </div>

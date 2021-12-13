@@ -27,7 +27,11 @@
 </head>
 <body>
 <h3>
-    <a href="${pageContext.request.contextPath}/adm/allStu">查看所有学生</a>
+    <a href="${pageContext.request.contextPath}/toLogin">登录页面</a>
 </h3>
+<h3>
+    <a href="${pageContext.request.contextPath}/main">登录成功</a>
+</h3>
+
 </body>
 </html>
