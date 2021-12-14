@@ -7,6 +7,8 @@
 <head>
     <title>登录成功</title>
     <%--BootStrap--%>
+    <link rel="icon" href="https://s3.bmp.ovh/imgs/2021/12/b79016db8c4c54f2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://s3.bmp.ovh/imgs/2021/12/b79016db8c4c54f2.png" type="image/x-icon">
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>

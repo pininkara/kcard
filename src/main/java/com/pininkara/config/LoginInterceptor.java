@@ -15,14 +15,11 @@ public class LoginInterceptor implements HandlerInterceptor {
         if (request.getRequestURI().contains("toLogin")||request.getRequestURI().contains("login")){
             return true;
         }
-
         if (session.getAttribute("id")!=null){
             return true;
         }
-
         //没登录
         request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request,response);
         return false;
-
     }
 }

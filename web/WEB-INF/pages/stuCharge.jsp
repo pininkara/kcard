@@ -18,7 +18,7 @@
     <div class="col-md-12 column">
       <div class="page-header">
         <h1>
-          <small>添加学生</small>
+          <small>学生充值</small>
         </h1>
       </div>
     </div>

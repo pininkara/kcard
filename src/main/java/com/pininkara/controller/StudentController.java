@@ -75,8 +75,6 @@ public class StudentController {
     @RequestMapping("/queryStu")
     public String queryStu(String queryName, Model model) {
         Student student = studentService.queryStudentByName(queryName);
-        System.out.println("===QueryStudent=>" + student);
-
         List<Student> studentList = new ArrayList<>();
         studentList.add(student);
         if (student == null) {

@@ -22,11 +22,6 @@ public class LoginController {
     @Qualifier("studentServiceImpl")
     private StudentService studentService;
 
-    @RequestMapping("*")
-    public String notFound(){
-        return "404";
-    }
-
     @RequestMapping("/toLogin")
     public String toLogin() {
         return "login";
