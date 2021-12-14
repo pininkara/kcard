@@ -13,18 +13,15 @@ public class LoginInterceptor implements HandlerInterceptor {
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         HttpSession session = request.getSession();
         if (request.getRequestURI().contains("toLogin")||request.getRequestURI().contains("login")){
-            System.out.println("===return true");
             return true;
         }
 
         if (session.getAttribute("id")!=null){
-            System.out.println("===return true");
             return true;
         }
 
         //没登录
         request.getRequestDispatcher("/WEB-INF/pages/login.jsp").forward(request,response);
-        System.out.println("===return false");
         return false;
 
     }

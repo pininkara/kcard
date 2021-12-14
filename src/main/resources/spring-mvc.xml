@@ -25,10 +25,6 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/**"/>
-            <bean class="com.pininkara.config.MyInterceptor"/>
-        </mvc:interceptor>
-        <mvc:interceptor>
-            <mvc:mapping path="/**"/>
             <bean class="com.pininkara.config.LoginInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>

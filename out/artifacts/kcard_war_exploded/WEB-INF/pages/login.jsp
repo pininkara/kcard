@@ -38,6 +38,7 @@
                 </div>
                 <button type="submit" class="btn btn-default">Login</button>
             </form>
+            <span style="color: red;font-weight: bold">${error}</span>
             <nav>
                 <ul>
                     <li><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1614975630&website=www.oicqzone.com" class="icon brands fa-qq"><span class="label">QQ</span></a></li>

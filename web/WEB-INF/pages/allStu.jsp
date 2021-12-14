@@ -7,6 +7,8 @@
 <html>
 <head>
     <title>所有学生</title>
+    <link rel="icon" href="https://s3.bmp.ovh/imgs/2021/12/b79016db8c4c54f2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://s3.bmp.ovh/imgs/2021/12/b79016db8c4c54f2.png" type="image/x-icon">
     <%--BootStrap--%>
     <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -18,8 +20,8 @@
         <div class="col-md-12 column">
             <div class="page-header">
                 <h1>
-                    <small>所有学生信息</small>
-                    <small>${pageContext.request.session.getAttribute("id")}</small>
+                    <small>欢迎您，${pageContext.request.session.getAttribute("id")}</small>
+                    <small>&nbsp;&nbsp;所有学生信息</small>
                 </h1>
             </div>
         </div>
@@ -29,6 +31,7 @@
                 <%--toAddStudent--%>
                 <a class="btn btn-primary" href="${pageContext.request.contextPath}/adm/toAddStu">添加学生</a>
                 <a class="btn btn-primary" href="${pageContext.request.contextPath}/adm/allStu">查看全部学生</a>
+                <a class="btn btn-danger" href="${pageContext.request.contextPath}/goOut">注销登录</a>
             </div>
             <div class="col-md-4 column"></div>
             <div class="col-md-4 column">
