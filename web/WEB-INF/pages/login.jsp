@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/asset/css/main.css"/>
     <noscript>
-        <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/noscript.css"/>
+        <link rel="stylesheet" href="${pageContext.request.contextPath}/asset/css/noscript.css"/>
     </noscript>
 </head>
 <body class="is-preload">
@@ -41,7 +41,7 @@
             <span style="color: red;font-weight: bold">${error}</span>
             <nav>
                 <ul>
-                    <li><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=1614975630&website=www.oicqzone.com" class="icon brands fa-qq"><span class="label">QQ</span></a></li>
+                    <li><a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=2709607389&website=www.oicqzone.com" class="icon brands fa-qq"><span class="label">QQ</span></a></li>
                     <li><a href="#" class="icon brands fa-weixin"><span class="label">Wechat</span></a></li>
                     <li><a href="https://github.com/pininkara" class="icon brands fa-github"><span class="label">Github</span></a></li>
                     <li><a href="Mailto:pininkara@outlook.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
